@@ -1,8 +1,11 @@
 export default function Homepage() {
 
-    document.body.classList.remove('img-back');
-    document.body.classList.remove('img-back-2');
-    document.body.classList.remove('img-back-games');
+    document.body.classList.remove(
+        'img-back',
+        'img-back-2',
+        'img-back-3',
+        'img-back-home',
+    );
     document.body.classList.add('img-back-home');
 
     return (

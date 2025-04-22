@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 export default function Games() {
 
     function removeBg() {
-        document.body.classList.remove('img-back');
-        document.body.classList.remove('img-back-2');
-        document.body.classList.remove('img-back-3');
-        document.body.classList.remove('img-back-home');
+
+        document.body.classList.remove(
+            'img-back',
+            'img-back-2',
+            'img-back-3',
+            'img-back-home',
+        );
         document.body.classList.add('img-back-games');
     };
 
