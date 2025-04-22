@@ -5,9 +5,11 @@ import horrorRooms from "../data/horrorRooms";
 export default function ThirdCard() {
 
     const { slug } = useParams();
+
     document.body.classList.remove('img-back-games');
 
     const array = horrorRooms.find(ele => (ele.slug == slug));
+
     array ? document.body.classList.add('img-back-3') : '';
 
     const scelta = array.choice1 && array.n1 || array.choice2 && array.n2;
