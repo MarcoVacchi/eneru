@@ -9,26 +9,27 @@ import ThirdCard from './pages/ThirdCard';
 
 export default function App() {
 
-  return (
-    <>
+  return <div>
 
-      <BrowserRouter >
-        <Routes>
-          <Route element={<NavBar />}>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/games" element={<Games />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/games/ultimo/:slug" element={<LastCard />} />
-            <Route path="/games/sepolti/:slug" element={<BuriedCard />} />
-            <Route path="/games/horror/:slug" element={<ThirdCard />} />
-          </Route>
+    <BrowserRouter >
+      <Routes>
+        <Route element={<NavBar />}>
+          <Route path="/" element={<Homepage />} />
 
-        </Routes>
+          <Route path="/games" >
+            <Route index element={<Games />} />
+            <Route path="ultimo/:slug" element={<LastCard />} />
+            <Route path="sepolti/:slug" element={<BuriedCard />} />
+            <Route path="horror/:slug" element={<ThirdCard />} />
+          </Route >
 
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<h1>pagina non trovata </h1>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
 
-      </BrowserRouter>
-    </>
-  )
+  </div>
 };
 
 

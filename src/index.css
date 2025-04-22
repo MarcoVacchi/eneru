@@ -29,8 +29,10 @@ body.img-back-games {
 }
 
 body.img-back-home {
-    background-image: url(../public/giphy.gif);
+    background-image: url(../public/gifff.gif);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .text-red {

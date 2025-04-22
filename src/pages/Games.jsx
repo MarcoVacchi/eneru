@@ -18,7 +18,8 @@ export default function Games() {
         removeBg();
     }, []);
 
-    return <>
+    return <div>
+
         <h3 className="text-center text-red fw-bold mt-5 mb-5">Easiest level</h3>
         <div className="d-flex justify-content-center mt-5 gap-container">
             <div className="card">
@@ -57,5 +58,6 @@ export default function Games() {
                 </div>
             </div>
         </div>
-    </>
+
+    </div>
 };

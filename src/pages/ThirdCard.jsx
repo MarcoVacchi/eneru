@@ -15,6 +15,7 @@ export default function ThirdCard() {
     const scelta = array.choice1 && array.n1 || array.choice2 && array.n2;
 
     return <div className="d-flex justify-content-center mt-5">
+
         <div className="card" >
             <img src={array.image} className="card-img-top" alt="ultimo" />
             <div className="card-body">
@@ -45,5 +46,6 @@ export default function ThirdCard() {
                 </div>
             </div>
         </div>
+
     </div>
 };
