@@ -12,7 +12,7 @@ import BackgroundMusic from './component/BackgroundMusic';
 export default function App() {
 
   return <div>
-    <BackgroundMusic />
+
     <BrowserRouter >
       <Routes>
         <Route element={<NavBar />}>
@@ -35,6 +35,6 @@ export default function App() {
   </div>
 };
 
-
+//<BackgroundMusic />
 
 
