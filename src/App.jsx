@@ -7,11 +7,12 @@ import About from './pages/About';
 import BuriedCard from './pages/BuriedCard';
 import ThirdCard from './pages/ThirdCard';
 import Contatti from './pages/Contatti';
+import BackgroundMusic from './component/BackgroundMusic';
 
 export default function App() {
 
   return <div>
-
+    <BackgroundMusic />
     <BrowserRouter >
       <Routes>
         <Route element={<NavBar />}>
